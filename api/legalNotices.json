@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "title": "Informations légales",
+    "content": [
+      {
+        "text": "Nom de l'entreprise: Frédéric DEPARIS"
+      },
+      {
+        "text": "Adresse: "
+      },
+      {
+        "text": "Siret de l'établissement: "
+      },
+      {
+        "text": "Adresse e-mail: "
+      },
+      {
+        "text": "Directrice de la publication: Priscillia Ammeux"
+      },
+      {
+        "text": "Hébergeur: Vercel"
+      },
+      {
+        "text": " Entreprise en charge du développement du site et de sa maintenance : Priscillia Ammeux"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Propriété intellectuelle",
+    "content": "Tous les contenus présents sur ce site sont protégés par les droits d'auteur. Toute reproduction, même partielle, est interdite sans autorisation préalable. L'Utilisateur doit solliciter l'autorisation préalable du site pour toute reproduction, publication, copie des différents contenus. Il s'engage à une utilisation des contenus du site dans un cadre strictement privé, toute utilisation à des fins commerciales et publicitaires est strictement interdite. Il est rappelé conformément à l’article L122-5 du Code de propriété intellectuelle que l’Utilisateur qui reproduit, copie ou publie le contenu protégé doit citer l’auteur et sa source."
+  },
+  {
+    "id": 3,
+    "title": "Liens hypertextes",
+    "content": "Ce site peut contenir des liens hypertextes vers d'autres sites web. L'entreprise ne peut être tenue responsable du contenu de ces sites web ni des pratiques de ces sites en matière de protection de la vie privée."
+  },
+  {
+    "id": 4,
+    "title": "Données personnelles",
+    "content": "Les données personnelles collectées sur ce site sont destinées à l'usage exclusif de l'entreprise. Elles ne seront ni vendues, ni échangées, ni louées à des tiers. Conformément à la loi Informatique et Libertés du 6 janvier 1978 et au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants concernant vos données personnelles :",
+    "list": [
+      {
+        "text": "Droit d'accès : Vous pouvez demander l'accès à vos données personnelles que nous détenons."
+      },
+      {
+        "text": "Droit de rectification : Vous pouvez demander la correction de données personnelles inexactes ou incomplètes."
+      },
+      {
+        "text": "Droit à l'effacement : Vous pouvez demander la suppression de vos données personnelles dans certains cas."
+      },
+      {
+        "text": "Droit à la portabilité : Vous pouvez demander à recevoir vos données personnelles dans un format structuré, couramment utilisé et lisible par machine."
+      },
+      {
+        "text": "Droit d'opposition : Vous pouvez vous opposer au traitement de vos données personnelles pour des motifs légitimes."
+      },
+      {
+        "text": "Droit à la limitation du traitement : Vous pouvez demander la limitation du traitement de vos données personnelles dans les cas suivants : (1) Si vous contestez l'exactitude des données, le temps que nous vérifiions leur exactitude ; (2) Si le traitement est illicite et que vous préférez la limitation à l'effacement ; (3) Si nous n'avons plus besoin des données, mais que vous en avez besoin pour la constatation, l'exercice ou la défense de droits en justice ; (4) Si vous vous opposez au traitement, le temps de vérifier si nos motifs légitimes prévalent sur les vôtres."
+      }
+    ],
+    "footer": "Vous pouvez exercer ces droits en nous contactant à l'adresse suivante : priscillia.ammeux.pro@gmail.com"
+  },
+
+  {
+    "id": 5,
+    "title": "Cookies",
+    "content": "Les cookies sont de petits fichiers texte stockés sur votre appareil lorsque vous visitez ce site. Ils sont utilisés pour améliorer votre expérience en enregistrant vos préférences et en offrant des fonctionnalités personnalisées. Certains cookies sont essentiels au bon fonctionnement du site, tandis que d'autres servent à mesurer l'audience ou à personnaliser les annonces publicitaires. Vous avez la possibilité de gérer vos préférences en matière de cookies via les paramètres de votre navigateur. Vous pouvez accepter, refuser ou supprimer les cookies à tout moment. Toutefois, le refus de certains cookies peut affecter votre expérience utilisateur et l'accès à certaines fonctionnalités du site. Pour en savoir plus sur l'utilisation des cookies et sur vos options de gestion, consultez notre Politique de confidentialité ou Politique de gestion des cookies."
+  }
+]
