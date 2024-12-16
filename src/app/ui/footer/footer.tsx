@@ -11,8 +11,7 @@ export default function Footer() {
         Mentions légales
       </a>
       <p className="italic flex flex-col md:flex-row gap-2 items-center">
-        Créé par Priscillia Ammeux, Conceptrice et Développeuse
-        d&apos;Applications:
+        Créé par Priscillia Ammeux
       </p>
 
       <a

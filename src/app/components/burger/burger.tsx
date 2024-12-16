@@ -36,13 +36,9 @@ export default function Burger() {
       onClick={(e) => e.stopPropagation()}
       // Prevent closing when clicking inside the menu
     >
-      <div className="flex justify-between items-center mt-2">
-        <div className="flex flex-col items-center ">
-          <h2 className="text-2xl font-bold">Frédéric DEPARIS</h2>
-        </div>
-
+      <div className="mt-2">
         <button
-          className="lg:hidden"
+          className="lg:hidden text-white"
           onClick={toggleMenu}
           aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}>
           {isOpen ? <FaTimes className="mr-6" /> : <FaBars className="mr-6" />}
