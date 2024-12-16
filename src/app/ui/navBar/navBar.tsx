@@ -1,11 +1,12 @@
 "use client";
 
 import NavLink from "@/app/ui/navLink/navLink";
-import { useRouter } from "next/compat/router";
+import { usePathname } from "next/navigation";
 
 export default function navBar() {
-  const router = useRouter();
-  const isHomePage = router?.pathname === "/";
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
+
   return (
     <section
       className={`flex justify-between items-center p-4 w-full text-white ${
