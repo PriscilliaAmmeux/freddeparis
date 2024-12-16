@@ -1,4 +1,3 @@
-import ScrollToTopButton from "@/app/components/scrollToTopButton/scrollToTopButton";
 import SocialNetwork from "../socialNetwork/socialNetwork";
 
 export default function Footer() {
@@ -24,8 +23,6 @@ export default function Footer() {
       <p className="text-xs md:text-sm lg:text-base font-semibold">
         © {new Date().getFullYear()} Frédéric DEPARIS. Tous droits réservés.
       </p>
-
-      <ScrollToTopButton />
     </footer>
   );
 }
