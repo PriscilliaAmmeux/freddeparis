@@ -34,7 +34,7 @@ export default function Burger() {
         height: isOpen ? "100vh" : "auto",
       }}
       onClick={(e) => e.stopPropagation()}
-      className="bg-primary-color flex justify-end"
+      className="bg-primary-color text-white flex justify-end"
       // Prevent closing when clicking inside the menu
     >
       <div className="mt-2">
@@ -64,6 +64,14 @@ export default function Burger() {
             href="/about"
             title="A propos de l'auteur"
             onClick={handleCloseMenu}
+            isActive={true}
+          />
+          <NavLink
+            href="/books"
+            title="Livres"
+            onClick={(e) => {
+              e.preventDefault();
+            }}
             isActive={true}
           />
 

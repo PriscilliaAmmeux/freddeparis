@@ -1,3 +1,5 @@
+"use client";
+
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -5,15 +7,12 @@ import Cookies from "./components/cookies/cookies";
 import SocialNetwork from "./ui/socialNetwork/socialNetwork";
 import Navigation from "./ui/navigation/navigation";
 
-export const metadata: Metadata = {
-  title: "",
-  description: "",
-};
+import "./globals.css";
 
 export default function Home() {
   return (
     <section className="background-image flex flex-col justify-center">
-      <div className="flex justify-end">
+      <div className="flex justify-end w-full">
         <Navigation />
       </div>
 
