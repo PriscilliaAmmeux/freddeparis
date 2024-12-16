@@ -4,8 +4,9 @@ interface NavLinkProps {
   href: string;
   title: string;
   className?: string;
-  onClick?: () => void;
-  isActive: boolean;
+  onClick?: (event: React.MouseEvent<HTMLHeadingElement>) => void;
+  isActive?: boolean;
+  children?: React.ReactNode;
 }
 
 export default function NavLink({
@@ -14,11 +15,12 @@ export default function NavLink({
   className,
   onClick,
   isActive,
+  children,
 }: NavLinkProps) {
   return (
     <Link href={href} target="_self" rel="noopener noreferrer">
       <h3
-        className={` font-semibold hover:underline mr-6 ${className}`}
+        className={`mr-6 uppercase ${className}`}
         onClick={onClick}
         style={{
           color: isActive ? "underline" : "",

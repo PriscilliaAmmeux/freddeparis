@@ -55,3 +55,7 @@ body {
 .bg-primary-color {
   background-color: var(--primary-color);
 }
+
+.bg-transparent {
+  background-color: transparent;
+}
