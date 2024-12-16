@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <section className="background-image flex flex-col  justify-center">
+    <section className="background-image flex flex-col justify-center">
       <div className="flex justify-end">
         <Navigation />
       </div>
