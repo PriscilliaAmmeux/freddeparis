@@ -1,55 +1,50 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import NavLink from "@/app/ui/navLink/navLink";
+import booksData from "../../../../api/book.json";
 
-export default function BurgerMenu() {
+export default function BurgerBooks() {
   const [isSubMenuVisible, setIsSubMenuVisible] = useState(false);
 
   const toggleSubMenu = () => {
     setIsSubMenuVisible(!isSubMenuVisible);
   };
 
+  const trilogies = booksData.reduce(
+    (acc: { [key: string]: typeof booksData }, book) => {
+      const { "name-trilogy": nameTrilogy } = book;
+      if (!acc[nameTrilogy]) {
+        acc[nameTrilogy] = [];
+      }
+      acc[nameTrilogy].push(book);
+      return acc;
+    },
+    {}
+  );
+
   return (
     <div>
       <button onClick={toggleSubMenu} className="text-white p-4">
-        Prestations
+        Livres
       </button>
       {isSubMenuVisible && (
-        <div>
-          <Link href="/" passHref>
-            <NavLink
-              className="text-white p-4"
-              title="Trilogie de Gaïa"
-              href={""}>
-              <ul>
-                <li>Game Over</li>
-                <li>La révolte des animaux</li>
-                <li>Le voyage ultime</li>
+        <section>
+          {Object.entries(trilogies).map(([trilogyName, books], index) => (
+            <div key={index}>
+              <h2>{trilogyName}</h2>
+              <ul className="mt-2">
+                {books.map((book) => (
+                  <li key={book.id}>
+                    <NavLink href={book.link} title={book.title}>
+                      {book.title}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
-            </NavLink>
-          </Link>
-          <Link href="/" passHref>
-            <NavLink
-              className="text-white p-4"
-              title="Trilogie le nouveau monde"
-              href={""}>
-              <ul>
-                <li>Bicéphales</li>
-              </ul>
-            </NavLink>
-          </Link>
-          <Link href="3" passHref>
-            <NavLink
-              className="text-white p-4"
-              title="Réfléxologie crânienne"
-              href={""}></NavLink>
-          </Link>
-          <Link href="/" passHref>
-            <NavLink className="text-white p-4" title="QVT" href={""}></NavLink>
-          </Link>
-        </div>
+            </div>
+          ))}
+        </section>
       )}
     </div>
   );
