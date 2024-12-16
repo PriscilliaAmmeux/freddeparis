@@ -33,6 +33,13 @@ export default function Burger() {
     };
   }, [isOpen]);
 
+  const gaiaBooks = booksData.filter(
+    (book) => book["name-trilogy"] === "Trilogie de Gaïa"
+  );
+  const nouveauMondeBooks = booksData.filter(
+    (book) => book["name-trilogy"] === "Trilogie le nouveau monde"
+  );
+
   return (
     <section
       style={{
@@ -55,12 +62,13 @@ export default function Burger() {
         <nav
           className={`${styles.burgerMenu} ${
             isOpen ? styles.open : ""
-          } flex flex-col items-center justify-center `}
+          } flex flex-col items-center justify-center pt-2`}
           onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the menu
         >
           <NavLink
             href="/"
             title="Accueil"
+            className="flex items-center justify-center mb-2"
             onClick={handleCloseMenu}
             isActive={true}
           />
@@ -68,25 +76,44 @@ export default function Burger() {
           <NavLink
             href="/about"
             title="À propos de l'auteur"
+            className="flex items-center justify-center mt-2"
             onClick={handleCloseMenu}
             isActive={true}
           />
           <NavLink
             href="/books"
             title="Livres ▼"
+            className="flex items-center justify-center mt-2"
             onClick={(e) => {
               e.preventDefault();
             }}
             isActive={true}
           />
 
-          <div className="flex flex-col items-center">
-            {booksData.map((booksData) => (
+          <div className="flex flex-col justify-center items-center mb-2">
+            <h2>Trilogie de Gaïa</h2>
+            {gaiaBooks.map((book) => (
               <NavLink
-                href={booksData.link}
-                title={booksData.title}
-                key={booksData.id}
+                href={book.link}
+                title={book.title}
+                key={book.id}
                 onClick={handleCloseMenu}
+                className="flex justify-center items-center"
+              />
+            ))}
+          </div>
+
+          <div className="flex flex-col justify-center items-center mb-2">
+            <h2 className="flex justify-center items-center">
+              Trilogie le nouveau monde
+            </h2>
+            {nouveauMondeBooks.map((book) => (
+              <NavLink
+                href={book.link}
+                title={book.title}
+                key={book.id}
+                onClick={handleCloseMenu}
+                className="flex justify-center items-center"
               />
             ))}
           </div>
@@ -94,6 +121,7 @@ export default function Burger() {
           <NavLink
             href="/contact"
             title="Contact"
+            className="flex items-center justify-center mb-2"
             onClick={handleCloseMenu}
             isActive={true}
           />
@@ -101,11 +129,12 @@ export default function Burger() {
           <NavLink
             href="/legalNotices"
             title="Mentions légales"
+            className="flex items-center justify-center"
             onClick={handleCloseMenu}
             isActive={true}
           />
 
-          <span className="flex items-center mt-5">
+          <span className="flex justify-center items-center mt-5">
             <SocialNetwork />
           </span>
         </nav>
