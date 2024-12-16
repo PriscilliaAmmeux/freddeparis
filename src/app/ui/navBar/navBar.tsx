@@ -3,7 +3,7 @@
 import NavLink from "@/app/ui/navLink/navLink";
 import { usePathname } from "next/navigation";
 
-export default function navBar() {
+export default function NavBar() {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
 
