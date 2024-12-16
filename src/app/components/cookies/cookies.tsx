@@ -67,8 +67,8 @@ export default function Cookies() {
   return (
     <section>
       {showPopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+        <div className="fixed bottom-0 left-0 right-0  flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white p-5  shadow-lg w-full">
             <div className="flex flex-row items-center">
               <Image
                 src="/cookies.webp"
@@ -76,33 +76,34 @@ export default function Cookies() {
                 width={100}
                 height={100}
               />
-              <p className="pb-2 font-bold text-black">
+              <p className="pb-2 font-bold">
                 Salut c&apos;est nous, les COOKIES !
               </p>
             </div>
-            <p className="mb-4 text-black">
+
+            <p className="mb-4 ml-2 mr-2 mt-2 text-black">
               En cliquant sur &laquo; Tout accepter &raquo;, vous acceptez
               l&apos;utilisation de cookies techniques nécessaires au bon
               fonctionnement du site, ainsi que des cookies à des fins
-              statistiques.
+              statistiques.{" "}
               <a href="/legalNotices" className="text-blue-700 underline">
                 En savoir plus
-              </a>{" "}
+              </a>
             </p>
             <div className="flex justify-end space-x-4">
               <button
                 onClick={handleAccept}
-                className="bg-green-800 text-white px-4 py-2 rounded hover:underline">
+                className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-white hover:text-black hover:underline">
                 Tout accepter
               </button>
               <button
                 onClick={handleRefused}
-                className="bg-red-700 text-white px-4 py-2 rounded hover:underline">
+                className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-white hover:text-black hover:underline">
                 Tout refuser
               </button>
               <button
                 onClick={handleCustomize}
-                className="bg-gray-600 text-white px-4 py-2 rounded hover:underline">
+                className=" px-4 py-2 hover:underline">
                 Personnaliser mes choix
               </button>
             </div>
@@ -111,8 +112,8 @@ export default function Cookies() {
       )}
 
       {showCustomizePopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
+        <div className="fixed bottom-0 left-0 right-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white p-6 shadow-lg w-full">
             <h3 className="text-xl font-bold mb-4">
               Personnaliser les cookies
             </h3>
@@ -141,12 +142,12 @@ export default function Cookies() {
             <div className="flex justify-end space-x-4">
               <button
                 onClick={handleCancel}
-                className="bg-gray-500 text-white px-4 py-2 rounded hover:underline">
+                className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-white hover:text-black hover:underline">
                 Annuler
               </button>
               <button
                 onClick={handleSave}
-                className="bg-green-800 text-white px-4 py-2 rounded hover:underline">
+                className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-white hover:text-black hover:underline">
                 Enregistrer
               </button>
             </div>
