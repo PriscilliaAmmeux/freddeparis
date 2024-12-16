@@ -1,5 +1,3 @@
-"use client";
-
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
@@ -8,6 +6,11 @@ import SocialNetwork from "./ui/socialNetwork/socialNetwork";
 import Navigation from "./ui/navigation/navigation";
 
 import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Frédéric DEPARIS",
+  description: "Site de Frédéric DEPARIS",
+};
 
 export default function Home() {
   return (

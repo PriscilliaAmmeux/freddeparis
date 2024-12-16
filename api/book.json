@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "image": "",
+    "title": "Game Over",
+    "name-trilogy": "Trilogie de Gaïa",
+    "number-trilogy": "1",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    "link": ""
+  },
+  {
+    "id": 2,
+    "image": "",
+    "title": "La révolte des animaux",
+    "name-trilogy": "Trilogie de Gaïa",
+    "number-trilogy": "2",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    "link": ""
+  },
+  {
+    "id": 3,
+    "image": "",
+    "title": "Le voyage ultime",
+    "name-trilogy": "Trilogie de Gaïa",
+    "number-trilogy": "2",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    "link": ""
+  },
+  {
+    "id": 4,
+    "image": "",
+    "title": "Bicéphales",
+    "name-trilogy": "Trilogie le nouveau monde",
+    "number-trilogy": "1",
+    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+
+    "link": ""
+  }
+]

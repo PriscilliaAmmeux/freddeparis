@@ -4,8 +4,13 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "../../styles/burger.module.css";
 import { useState, useEffect } from "react";
 import NavLink from "@/app/ui/navLink/navLink";
+import SocialNetwork from "@/app/ui/socialNetwork/socialNetwork";
+import { usePathname } from "next/navigation";
+import booksData from "../../../../api/book.json";
 
 export default function Burger() {
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -34,12 +39,12 @@ export default function Burger() {
         height: isOpen ? "100vh" : "auto",
       }}
       onClick={(e) => e.stopPropagation()}
-      className="bg-primary-color text-white flex justify-end"
-      // Prevent closing when clicking inside the menu
-    >
+      className={`text-white ${
+        isHomePage ? "bg-transparent" : "bg-primary-color"
+      }`}>
       <div className="mt-2">
         <button
-          className="lg:hidden text-white "
+          className="lg:hidden text-white flex justify-end p-4"
           onClick={toggleMenu}
           aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}>
           {isOpen ? <FaTimes className="mr-6" /> : <FaBars className="mr-6" />}
@@ -50,7 +55,7 @@ export default function Burger() {
         <nav
           className={`${styles.burgerMenu} ${
             isOpen ? styles.open : ""
-          } flex flex-col items-center justify-start `}
+          } flex flex-col items-center justify-center `}
           onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside the menu
         >
           <NavLink
@@ -62,18 +67,29 @@ export default function Burger() {
 
           <NavLink
             href="/about"
-            title="A propos de l'auteur"
+            title="À propos de l'auteur"
             onClick={handleCloseMenu}
             isActive={true}
           />
           <NavLink
             href="/books"
-            title="Livres"
+            title="Livres ▼"
             onClick={(e) => {
               e.preventDefault();
             }}
             isActive={true}
           />
+
+          <div className="flex flex-col items-center">
+            {booksData.map((booksData) => (
+              <NavLink
+                href={booksData.link}
+                title={booksData.title}
+                key={booksData.id}
+                onClick={handleCloseMenu}
+              />
+            ))}
+          </div>
 
           <NavLink
             href="/contact"
@@ -81,6 +97,17 @@ export default function Burger() {
             onClick={handleCloseMenu}
             isActive={true}
           />
+
+          <NavLink
+            href="/legalNotices"
+            title="Mentions légales"
+            onClick={handleCloseMenu}
+            isActive={true}
+          />
+
+          <span className="flex items-center mt-5">
+            <SocialNetwork />
+          </span>
         </nav>
       )}
     </section>
