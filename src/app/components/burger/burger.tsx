@@ -34,11 +34,12 @@ export default function Burger() {
         height: isOpen ? "100vh" : "auto",
       }}
       onClick={(e) => e.stopPropagation()}
+      className="bg-primary-color flex justify-end"
       // Prevent closing when clicking inside the menu
     >
       <div className="mt-2">
         <button
-          className="lg:hidden text-white"
+          className="lg:hidden text-white "
           onClick={toggleMenu}
           aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}>
           {isOpen ? <FaTimes className="mr-6" /> : <FaBars className="mr-6" />}
