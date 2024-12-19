@@ -4,7 +4,7 @@ import { SlSocialLinkedin } from "react-icons/sl";
 
 export default function SocialNetwork() {
   return (
-    <section className="pt-6 flex items-center text-white gap-2">
+    <section className="pt-6 flex items-center gap-2">
       <a
         href=""
         target="_blank"
