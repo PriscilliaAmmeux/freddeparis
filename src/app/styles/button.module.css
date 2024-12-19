@@ -1,0 +1,11 @@
+.button-white-border {
+  border: 2px solid var(--blue-color);
+  background-color: var(--white-color);
+  color: var(--blue-color);
+}
+
+.button-blue-border {
+  border: 2px solid var(--blue-color);
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
