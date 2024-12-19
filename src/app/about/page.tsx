@@ -5,8 +5,12 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Livres de Frédéric DEPARIS",
-  description: "À propos de l'auteur",
+  title:
+    "Livres de Frédéric DEPARIS - Science Fiction et Trilogies Captivantes",
+  description:
+    "Explorez la bibliothèque de Frédéric DEPARIS, auteur de science-fiction. Découvrez ses trilogies captivantes comme la Trilogie de Gaïa et ses œuvres phares : Game Over, La révolte des animaux, et Le voyage ultime.",
+  keywords:
+    "Livres Frédéric DEPARIS, science-fiction, romans captivants, trilogies, Trilogie de Gaïa, Game Over, La révolte des animaux, Le voyage ultime, auteur science-fiction, littérature imaginative",
 };
 
 export default function Page() {

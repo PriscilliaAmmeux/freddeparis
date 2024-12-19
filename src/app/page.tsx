@@ -4,12 +4,14 @@ import type { Metadata } from "next";
 import Cookies from "./components/cookies/cookies";
 import SocialNetwork from "./ui/socialNetwork/socialNetwork";
 import Navigation from "./ui/navigation/navigation";
-
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Frédéric DEPARIS",
-  description: "Site de Frédéric DEPARIS",
+  title: "Frédéric DEPARIS - Auteur de Science Fiction",
+  description:
+    "Plongez dans l'univers captivant de Frédéric DEPARIS, auteur de science-fiction et de romans incontournables. Découvrez ses trilogies uniques, lisez des extraits exclusifs et commandez vos livres préférés. Idéal pour les amateurs de littérature imaginative.",
+  keywords:
+    "Frédéric DEPARIS, auteur science-fiction, romans dystopiques, trilogies captivantes, Trilogie de Gaïa, Game Over, Le voyage ultime, Le nouveau monde, livres numériques, romans futuristes",
 };
 
 export default function Home() {

@@ -4,7 +4,11 @@ import legalNotices from "../../../api/legalNotices.json";
 import Title from "../ui/title/title";
 
 export const metadata: Metadata = {
-  title: "Mentions légales - Priscillia Ammeux",
+  title: "Mentions légales - Frédéric DEPARIS",
+  description:
+    "Consultez les mentions légales du site officiel de Frédéric DEPARIS, auteur de science-fiction et de romans captivants. Informations sur l'éditeur, l'hébergement et les droits.",
+  keywords:
+    "Mentions légales, Frédéric DEPARIS, site officiel, auteur science-fiction, informations légales, droits d'auteur, hébergeur, éditeur",
 };
 
 export default function LegalNotices() {
