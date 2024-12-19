@@ -33,12 +33,13 @@ export default function Burger() {
     };
   }, [isOpen]);
 
-  const gaiaBooks = booksData.filter(
-    (book) => book["name-trilogy"] === "Trilogie de Gaïa"
-  );
-  const nouveauMondeBooks = booksData.filter(
-    (book) => book["name-trilogy"] === "Trilogie le nouveau monde"
-  );
+  const gaiaBooks =
+    booksData.trilogies.find((trilogy) => trilogy.name === "Trilogie de Gaïa")
+      ?.books || [];
+  const nouveauMondeBooks =
+    booksData.trilogies.find(
+      (trilogy) => trilogy.name === "Trilogie le nouveau monde"
+    )?.books || [];
 
   return (
     <section

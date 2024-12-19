@@ -8,8 +8,8 @@ interface TitleProps {
 
 export default function Title({ title, className }: TitleProps) {
   return (
-    <div className="flex items-center mb-4">
-      <h1 className={`text-xl font-bold ${styles.title}`}>{title}</h1>
+    <div className="flex items-center justify-center mb-4">
+      <h1 className={`text-3xl font-bold ${styles.title}`}>{title}</h1>
     </div>
   );
 }
