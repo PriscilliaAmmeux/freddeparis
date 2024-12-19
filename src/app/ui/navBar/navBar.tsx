@@ -10,7 +10,7 @@ export default function NavBar() {
   return (
     <section
       className={`flex justify-between items-center p-4 w-full text-white ${
-        isHomePage ? "bg-transparent" : "bg-primary-color"
+        isHomePage ? "bg-transparent" : "bg-blue-color"
       }`}>
       <nav className="flex space-x-4">
         <NavLink href="/" title="Accueil" isActive={true} />

@@ -47,7 +47,7 @@ export default function Burger() {
       }}
       onClick={(e) => e.stopPropagation()}
       className={`text-white ${
-        isHomePage ? "bg-transparent" : "bg-primary-color"
+        isHomePage ? "bg-transparent" : "bg-blue-color"
       }`}>
       <div className="mt-2">
         <button
@@ -68,7 +68,7 @@ export default function Burger() {
           <NavLink
             href="/"
             title="Accueil"
-            className="flex items-center justify-center mb-2"
+            className="flex items-center justify-center mb-2 font-bold"
             onClick={handleCloseMenu}
             isActive={true}
           />
@@ -76,14 +76,14 @@ export default function Burger() {
           <NavLink
             href="/about"
             title="À propos de l'auteur"
-            className="flex items-center justify-center mt-2"
+            className="flex items-center justify-center mt-2 font-bold"
             onClick={handleCloseMenu}
             isActive={true}
           />
           <NavLink
             href="/books"
             title="Livres ▼"
-            className="flex items-center justify-center mt-2"
+            className="flex items-center justify-center mt-2 font-bold"
             onClick={(e) => {
               e.preventDefault();
             }}
@@ -121,7 +121,7 @@ export default function Burger() {
           <NavLink
             href="/contact"
             title="Contact"
-            className="flex items-center justify-center mb-2"
+            className="flex items-center justify-center mb-2 font-bold"
             onClick={handleCloseMenu}
             isActive={true}
           />
@@ -129,12 +129,12 @@ export default function Burger() {
           <NavLink
             href="/legalNotices"
             title="Mentions légales"
-            className="flex items-center justify-center"
+            className="flex items-center justify-center font-bold"
             onClick={handleCloseMenu}
             isActive={true}
           />
 
-          <span className="flex justify-center items-center mt-5">
+          <span className="flex justify-center items-center mt-5 color-text-blue">
             <SocialNetwork />
           </span>
         </nav>
