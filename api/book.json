@@ -1,38 +1,52 @@
-[
-  {
-    "id": 1,
-    "image": "",
-    "title": "Game Over",
-    "name-trilogy": "Trilogie de Gaïa",
-    "number-trilogy": "1",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
-    "link": "/books"
-  },
-  {
-    "id": 2,
-    "image": "",
-    "title": "La révolte des animaux",
-    "name-trilogy": "Trilogie de Gaïa",
-    "number-trilogy": "2",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
-    "link": "/books"
-  },
-  {
-    "id": 3,
-    "image": "",
-    "title": "Le voyage ultime",
-    "name-trilogy": "Trilogie de Gaïa",
-    "number-trilogy": "2",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
-    "link": "/books"
-  },
-  {
-    "id": 4,
-    "image": "",
-    "title": "Bicéphales",
-    "name-trilogy": "Trilogie le nouveau monde",
-    "number-trilogy": "1",
-    "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
-    "link": "/books"
-  }
-]
+{
+  "trilogies": [
+    {
+      "name": "Trilogie de Gaïa",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+      "books": [
+        {
+          "id": 1,
+          "image": "/couverture_game_over.png",
+          "title": "Game Over",
+          "number-trilogy": "1",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+          "link": "/books",
+          "buy": ""
+        },
+        {
+          "id": 2,
+          "image": "/couverture_la_révolte_des_animaux.png",
+          "title": "La révolte des animaux",
+          "number-trilogy": "2",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+          "link": "/books",
+          "buy": ""
+        },
+        {
+          "id": 3,
+          "image": "/couverture_le_voyage_ultime.png",
+          "title": "Le voyage ultime",
+          "number-trilogy": "3",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+          "link": "/books",
+          "buy": ""
+        }
+      ]
+    },
+    {
+      "name": "Trilogie le nouveau monde",
+      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat,",
+      "books": [
+        {
+          "id": 4,
+          "image": "/couverture_les_bicéphales.png",
+          "title": "Bicéphales",
+          "number-trilogy": "1",
+          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+          "link": "/books",
+          "buy": ""
+        }
+      ]
+    }
+  ]
+}
