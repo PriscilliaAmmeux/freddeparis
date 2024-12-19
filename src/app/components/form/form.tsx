@@ -5,6 +5,7 @@ import Title from "@/app/ui/title/title";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import styles from "../../styles/button.module.css";
 
 export default function Form() {
   const [name, setName] = useState("");
@@ -89,7 +90,7 @@ export default function Form() {
         placeholder="Votre nom"
         required
         aria-required="true"
-        className="mb-4 p-2 border border-gray-300 rounded"
+        className="mb-4 p-2 border border-gray-300 rounded-md"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
@@ -103,7 +104,7 @@ export default function Form() {
         placeholder="mon-mail@exemple.com"
         required
         aria-required="true"
-        className="mb-4 p-2 border border-gray-300 rounded"
+        className="mb-4 p-2 border border-gray-300 rounded-md"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
@@ -117,7 +118,7 @@ export default function Form() {
         placeholder="Votre numéro de téléphone"
         required
         aria-required="true"
-        className="mb-4 p-2 border border-gray-300 rounded"
+        className="mb-4 p-2 border border-gray-300 rounded-md"
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
       />
@@ -130,7 +131,7 @@ export default function Form() {
         placeholder="Votre message"
         required
         aria-required="true"
-        className="mb-4 p-2 border border-gray-300 rounded h-32"
+        className="mb-4 p-2 border border-gray-300 rounded-md h-32"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
@@ -147,6 +148,7 @@ export default function Form() {
         type="submit"
         text="Envoyer mon message"
         aria-label="Cliquez sur le bouton pour envoyer le message"
+        className={`${styles["button-blue-border"]} rounded-md`}
       />
     </form>
   );
