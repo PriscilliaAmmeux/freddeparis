@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import booksData from "../../../api/book.json";
 import Image from "next/image";
 import Button from "../ui/button/button";
+import styles from "../styles/button.module.css";
 
 export const metadata: Metadata = {
   title: "Livres de Frédéric DEPARIS",
@@ -36,9 +37,19 @@ export default function Books() {
                   />
                   <div className="w-3/4">
                     <h3 className="text-xl font-semibold">{book.title}</h3>
-                    <p className="mb-2">{book.summary}</p>{" "}
-                    <Button type="button" text="Lire un extrait" />
-                    <Button type="button" text="Acheter" />
+                    <p className="mb-2 text-justify">{book.summary}</p>
+                    <div className="flex gap-1">
+                      <Button
+                        type="button"
+                        text="Lire un extrait"
+                        className={styles["button-white-border"]}
+                      />
+                      <Button
+                        type="button"
+                        text="Acheter"
+                        className={styles["button-blue-border"]}
+                      />
+                    </div>
                   </div>
                 </div>
               ))}
