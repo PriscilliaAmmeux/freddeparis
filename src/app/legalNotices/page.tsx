@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Layout from "../ui/layout/layout";
 import legalNotices from "../../../api/legalNotices.json";
+import Title from "../ui/title/title";
 
 export const metadata: Metadata = {
   title: "Mentions légales - Priscillia Ammeux",
@@ -9,12 +10,12 @@ export const metadata: Metadata = {
 export default function LegalNotices() {
   return (
     <Layout>
-      <h2>Mentions légales</h2>
+      <Title title="Mentions légales" />
       <section className="p-4">
         <div className="space-y-8">
           {legalNotices.map((notice) => (
             <div key={notice.id} className="border-b pb-4">
-              <h3 className="text-xl font-bold mb-2">{notice.title}</h3>
+              <h2 className="text-xl font-bold mb-2">{notice.title}</h2>
               {Array.isArray(notice.content) ? (
                 notice.content.map((item, index) => (
                   <p key={index} className="mb-2">
