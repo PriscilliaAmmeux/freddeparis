@@ -8,7 +8,7 @@
           "id": 1,
           "image": "/couverture_game_over.png",
           "title": "Game Over",
-          "number-trilogy": "1",
+          "numberTrilogy": "1",
           "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
           "link": "/books",
           "buy": ""
@@ -17,18 +17,20 @@
           "id": 2,
           "image": "/couverture_la_révolte_des_animaux.png",
           "title": "La révolte des animaux",
-          "number-trilogy": "2",
+          "numberTrilogy": "2",
           "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
           "link": "/books",
+          "pdfLink": "/int-la-revolte-des-animaux.pdf",
           "buy": ""
         },
         {
           "id": 3,
           "image": "/couverture_le_voyage_ultime.png",
           "title": "Le voyage ultime",
-          "number-trilogy": "3",
-          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+          "numberTrilogy": "3",
+          "summary": "Dernier descendant des grands prophètes qui ont révélé auxhommes, l'existence et la prééminence de Gaïa,Népomucène, l'enfant prodigue, est prêt à accomplir le rêvede ses illustres ancêtres, leur quête absolue, le  Voyageultime : la rencontre avec la “Mère Divine” ! Troisième et dernier cycle de Gaïa, le Voyage ultime est unhymne pour le renouveau  d'une espèce humaine, enfinréconciliée, et vivant  en harmonie avec sa planète.",
           "link": "/books",
+          "pdfLink": "/int-le-voyage-ultime.pdf",
           "buy": ""
         }
       ]
@@ -41,9 +43,10 @@
           "id": 4,
           "image": "/couverture_les_bicéphales.png",
           "title": "Bicéphales",
-          "number-trilogy": "1",
-          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat",
+          "numberTrilogy": "1",
+          "summary": "Pour son septième anniversaire, un jeune garçon reçoit en cadeau, une boîte de jeux « Créateur de Mondes ». Bientôt, il expérimente avec succès la création de planètes, galaxies, jusqu’à donner naissance, malgré les recommandations de sa mère, à un être vivant….Dans son appartement, un homme seul, en proie à un violent mal de tête, se vide de milliers de mots sur une feuille de papier, jusqu’à écrire le mot « Fin » au petit matin…Gardienne de l’entre-deux Mondes, la Chimère imagine un piège pour attirer dans son antre le seul homme capable de sauver son Monde du néant…Dans une tour dressée au milieu d’une forêt impénétrable, Morpheus imagine une incroyable histoire pour savoir enﬁ n qui se cache derrière cet homme, auteur d’un livre qui décrit un Monde qui n’existe pas…Tous les acteurs sont en place pour le début d’une nouvelle histoire.Les Bicéphales, premier cycle de la trilogie le Nouveau Monde, nous entraîne à nouveau sur les traces de Gaïa et de Népomucène, l’enfant prodigue...",
           "link": "/books",
+          "pdfLink": "/int-bicéphales.pdf",
           "buy": ""
         }
       ]
