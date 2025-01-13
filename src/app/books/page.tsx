@@ -44,8 +44,9 @@ export default function Books() {
                         alt={book.title}
                         width={150}
                         height={225}
-                        className="w-full object-cover"
+                        className="mx-auto"
                       />
+
                       <div className="p-6 text-center">
                         <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                           {book.title}
