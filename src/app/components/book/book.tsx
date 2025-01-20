@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "../../styles/button.module.css";
 import Button from "@/app/ui/button/button";
 import Title from "@/app/ui/title/title";
+import Card from "../card/card";
 
 export default function Book() {
   const trilogies = booksData.trilogies;
@@ -31,26 +32,20 @@ export default function Book() {
   };
 
   return (
-    <section className="pt-10 pb-10 pl-2 pr-2">
-      <div className="text-center mb-10">
-        <Title title="Livres" />
-        <p className="text-lg text-gray-700 mt-4">
-          Deux trilogies pour le plaisir de lire
-        </p>
-      </div>
+    <section className="pt-10 pb-10 pl-2 pr-2 ">
       {trilogies.map((trilogy, index) => (
-        <section key={index} className="mb-16">
-          <h2 className="text-xl font-bold text-center text-gray-800 mb-6">
+        <section key={index} className="mb-16 ">
+          <h2 className="text-xl font-bold text-center text-gray-800 mb-6 italic">
             {trilogy.name}
           </h2>
-          <p className="text-lg text-gray-600 text-center mb-10">
+          <p className="text-lg text-gray-600 text-center mb-10 ml-10 mr-10 text-justify">
             {trilogy.summary}
           </p>
           <div className="flex flex-wrap justify-center -mx-4">
             {trilogy.books &&
               trilogy.books.map((book) => (
                 <div key={book.id} className="w-full md:w-1/3 px-4 mb-8">
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                  <Card>
                     <Image
                       src={book.image}
                       alt={book.title}
@@ -70,6 +65,7 @@ export default function Book() {
                         <Button
                           type="button"
                           text="Lire un extrait"
+                          aria-label="Lire un extrait"
                           className={styles["button-white-border"]}
                           onClick={() =>
                             book.pdfLink && handleDownload(book.pdfLink)
@@ -78,13 +74,14 @@ export default function Book() {
 
                         <Button
                           type="button"
-                          text="Acheter"
+                          text="Se procurer le livre"
+                          aria-label="Se procurer le livre"
                           className={styles["button-blue-border"]}
                           onClick={() => window.open(book.buyLink)}
                         />
                       </section>
                     </div>
-                  </div>
+                  </Card>
                 </div>
               ))}
           </div>
