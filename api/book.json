@@ -9,20 +9,20 @@
           "image": "/couverture_game_over.png",
           "title": "Game Over",
           "numberTrilogy": "1",
-          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+          "summary": "Agathe a rencontré Marc au Canada, lors d'un voyage organisé dont il était l'accompagnateur. Homme des bois, il ne semble trouver son bonheur qu'au milieu des grands espaces et s'absente pendant de longues périodes pour faire son travail de guide. Depuis deux ans, ils essayent en vain d'avoir un enfant, alors qu'aucun problème physiologique n'a été décelé. Ils pensent d'abord que leur problème est dû aux absences de Marc, mais bientôt, ils se rendent compte qu'ils ne sont pas seuls dans ce cas, la baisse de la fécondité prenant même une ampleur terrifiante et mystérieuse, qui alerte les gouvernements...",
           "link": "/books",
           "pdfLink": "/int-game-over.pdf",
-          "buy": ""
+          "buyLink": "https://www.amazon.fr/Game-Over-Fr%C3%A9d%C3%A9ric-Deparis/dp/2748329767?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2RRWPEBTLQXL0&dib=eyJ2IjoiMSJ9.PtRJDcgskOh_tUR7u8ulUo2Rf89P8ikgLtVev0bWckNAW49PWJIaAmta6n1skw3B9z2F-gmgiEWvKrjcs5baHLw7r26-kr8ZsZxv76lkbyQ.8GvaqXxiqX4o5I6HbdUEr8xaviPAhZpojeDtAOsCH8U&dib_tag=se&keywords=livre+fr%C3%A9d%C3%A9ric+deparis&nsdOptOutParam=true&qid=1737402745&s=books&sprefix=livre+fred%C3%A9ric+deparis%2Cstripbooks%2C79&sr=1-1-catcorr"
         },
         {
           "id": 2,
           "image": "/couverture_la_révolte_des_animaux.png",
           "title": "La révolte des animaux",
           "numberTrilogy": "2",
-          "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+          "summary": "15 août 2100 : dans le parc de Yellowstone aux Etats-Unis, un camp de touristes est sauvagement attaqué et massacré par une horde de grizzlis et d'ours bruns. Le même mois, lors de son vol inaugural, l'Airbus A 420 percute un nuage d'oiseaux qui s'engouffrent volontairement dans son réacteur et provoquent le crash de l'avion. Un peu plus tard, en Sibérie orientale, un couple de vieillards meurt, victime de l'incroyable assaut de millions d'insectes rampants. Au siège des Nations Unies, les représentants du monde entier sont forcés de reconnaître ce fait pourtant invraisemblable : les animaux se révoltent...  Pour toute commande de ce livre, je vous invite à me contacter via le formulaire de contact.",
           "link": "/books",
           "pdfLink": "/int-la-revolte-des-animaux.pdf",
-          "buy": ""
+          "buyLink": "/contact"
         },
         {
           "id": 3,
@@ -32,7 +32,7 @@
           "summary": "Dernier descendant des grands prophètes qui ont révélé auxhommes, l'existence et la prééminence de Gaïa,Népomucène, l'enfant prodigue, est prêt à accomplir le rêvede ses illustres ancêtres, leur quête absolue, le  Voyageultime : la rencontre avec la “Mère Divine” ! Troisième et dernier cycle de Gaïa, le Voyage ultime est unhymne pour le renouveau  d'une espèce humaine, enfinréconciliée, et vivant  en harmonie avec sa planète.",
           "link": "/books",
           "pdfLink": "/int-le-voyage-ultime.pdf",
-          "buy": ""
+          "buyLink": "https://www.amazon.fr/Voyage-Ultime-Fr%C3%A9d%C3%A9ric-Deparis/dp/2748310314?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2RRWPEBTLQXL0&dib=eyJ2IjoiMSJ9.PtRJDcgskOh_tUR7u8ulUo2Rf89P8ikgLtVev0bWckNAW49PWJIaAmta6n1skw3B9z2F-gmgiEWvKrjcs5baHLw7r26-kr8ZsZxv76lkbyQ.8GvaqXxiqX4o5I6HbdUEr8xaviPAhZpojeDtAOsCH8U&dib_tag=se&keywords=livre+fr%C3%A9d%C3%A9ric+deparis&nsdOptOutParam=true&qid=1737402745&s=books&sprefix=livre+fred%C3%A9ric+deparis%2Cstripbooks%2C79&sr=1-1"
         }
       ]
     },
@@ -45,10 +45,27 @@
           "image": "/couverture_les_bicéphales.png",
           "title": "Bicéphales",
           "numberTrilogy": "1",
-          "summary": "Pour son septième anniversaire, un jeune garçon reçoit en cadeau, une boîte de jeux « Créateur de Mondes ». Bientôt, il expérimente avec succès la création de planètes, galaxies, jusqu’à donner naissance, malgré les recommandations de sa mère, à un être vivant….Dans son appartement, un homme seul, en proie à un violent mal de tête, se vide de milliers de mots sur une feuille de papier, jusqu’à écrire le mot « Fin » au petit matin…Gardienne de l’entre-deux Mondes, la Chimère imagine un piège pour attirer dans son antre le seul homme capable de sauver son Monde du néant…Dans une tour dressée au milieu d’une forêt impénétrable, Morpheus imagine une incroyable histoire pour savoir enﬁ n qui se cache derrière cet homme, auteur d’un livre qui décrit un Monde qui n’existe pas…Tous les acteurs sont en place pour le début d’une nouvelle histoire.Les Bicéphales, premier cycle de la trilogie le Nouveau Monde, nous entraîne à nouveau sur les traces de Gaïa et de Népomucène, l’enfant prodigue...",
+          "summary": "La trilogie du « Nouveau Monde » fait suite à la trilogie « Gaïa », et la quête éperdue de Népomucène, pour retrouver sa mère divine, et assumer son destin, de « Créateur de Monde ». Dans le premier cycle « Les Bicéphales » : nous retrouvons Népomucène, seul, errant dans un Monde sans joie ni plaisir, gouverné par les bicéphales, des êtres humains dotés de deux cerveaux, qui ont pris le pouvoir, et « castré » littéralement au cours des siècles l’imagination des hommes monocéphales (doté d’un seul cerveau), considérant cette « faculté » dont ils sont dépourvus, comme dangereuse pour l’harmonie et  le bien-être de l’Humanité. L’art sous toutes ses formes n’existe plus dans ce Monde, et les hommes désœuvrés ne font que suivre placidement les consignes de vie dictées par leurs guides et mentors. Népomucène, auteur d’un manuscrit subversif écrit contre sa volonté et dans la douleur (qui n’est autre que la trilogie « Gaia »), pourchassé par les bicéphales, a révélé l’existence d’un ancien Monde, où l’imagination et l’art régnaient en abondance, sous toutes ses formes.  Grâce à Cornélius, unique tricéphale, doté de trois cerveaux, doué d’imagination, il découvre le château décrit dans son livre, lien intemporel entre les deux mondes, avec tous ses trésors cachés dans un sanctuaire inviolable, la fameuse « bibliothèque Cathédrale » qui recèle tous les chefs-d’œuvre écrits par les hommes de l’ancien-monde. Népomucène, encouragé par Cornélius, utilise le fauteuil temporel pour voyager dans les multiples dimensions de l’espace et le temps ; Au cours de son odyssée sur le dos de Pégase, le cheval ailé, pour délivrer Joséphine, sa maitresse, prisonnière de la Chimère, il rencontre d’étranges créatures qui n’existent pas, d’Harry Potter, à Yoda, ou le Petit Prince, pour terminer dans un village en bord de mer, « l’antre de la Chimère », où sont réunies toutes les créatures imaginées par les hommes de l’ancien Monde.  La Chimère lui révèle que « l’entre-deux-mondes » est menacé de disparaitre, faute d’imagination et de nouvelles créations. La Chimère révèle également à Népomucène, qu’il n’est autre que le fils de Gaia, la Déesse mère, et que lui seul, possède les pouvoirs pour sauver l’existence de « l’entre- deux-mondes » ! Revenu dans son château, prêt à assumer son destin, il est trahi par Cornélius, dont la véritable identité est Morpheus, un monocéphale dévoué, à la solde des bicéphale, pour traquer leurs ennemis.  Acculé, Népomucène parvient à s’enfuir grâce à son fauteuil temporel dans le passé des hommes de l’ancien Monde.",
           "link": "/books",
           "pdfLink": "/int-les-bicéphales.pdf",
-          "buy": ""
+          "buyLink": "https://www.amazon.fr/Bic%C3%A9phales-Deparis-Fr%C3%A9d%C3%A9ric/dp/2748364163?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2RRWPEBTLQXL0&dib=eyJ2IjoiMSJ9.PtRJDcgskOh_tUR7u8ulUo2Rf89P8ikgLtVev0bWckNAW49PWJIaAmta6n1skw3B9z2F-gmgiEWvKrjcs5baHLw7r26-kr8ZsZxv76lkbyQ.8GvaqXxiqX4o5I6HbdUEr8xaviPAhZpojeDtAOsCH8U&dib_tag=se&keywords=livre+fr%C3%A9d%C3%A9ric+deparis&nsdOptOutParam=true&qid=1737402745&s=books&sprefix=livre+fred%C3%A9ric+deparis%2Cstripbooks%2C79&sr=1-3"
+        },
+        {
+          "id": 5,
+          "image": "/",
+          "title": "Morpheus ou la Révolution Poétique",
+          "numberTrilogy": "2",
+          "summary": "Dans le second cycle « Morpheus ou la Révolution Poétique » : Népomucène, après son départ précipité de son château poursuivi par Morpheus, se retrouve en pleine révolution française, en janvier 1793, à voter la mort du roi. Visité par les créatures de « l’entre-deux-mondes » envoyées par la Chimère, qui suit son périple, il choisit suivant les conseils de Lucien Brindavoine, amoureux transi de la belle Adèle, de prendre du bon temps, en compagnie d’une splendide aristocrate russe, à Monaco pendant les années folles, ou avec Joséphine sur le plus beau paquebot du Monde, le « Normandie », à la veille de la seconde guerre mondiale ;Mais rattrapé par la Chimère, qui lui demande des comptes, il est contraint de retrouver Morpheus et de s’en faire un allié pour délivrer Joséphine, prisonnière des bicéphales. Ces derniers l’ont emprisonnée dans la Tour, espérant ainsi attirer Népomucène dans un piège pour le mettre hors d’état de nuire. Avec l’aide de Morpheus, rallié à sa cause, et du 17 un droïde expérimental conçu et fabriqué par Morpheus, Népomucène délivre Joséphine et l’emporte dans son château dans l’ancien Monde, hors d’atteinte des bicéphales. Fidèle à sa promesse, Morpheus mène la révolution contre les bicéphales. Une « Révolution des esprits », en pariant sur la poésie pour éveiller et stimuler l’imaginaire atrophié des hommes, et les émanciper de la tutelle de leurs mentors. Réfugié dans le passé de l’ancien monde avec Joséphine, Népomucène apprend de deux créatures de « l’entre-deux-mondes » que la révolution poétique est en marche, et que Morpheus avec l’aide de 17, a pris le contrôle de la tour, et de l’unique source de nourriture des bicéphales, contraignant ses derniers à lui obéir sous peine de mourir de faim. La Chimère, enthousiasmé par le succès de cette révolution des esprits, félicite Népomucène, et lui apprends qu’il est le numéro 1 de ce village, créateur de tous ces mondes, et père de toutes les créatures !",
+          "link": "/books",
+          "pdfLink": "",
+          "buyLink": ""
+        },
+        {
+          "id": 6,
+          "image": "/",
+          "title": "Le 3eme et dernier cycle est en cours de rédaction …..Pour une édition prévue sur 2026",
+          "numberTrilogy": "3",
+          "link": "/books"
         }
       ]
     }
