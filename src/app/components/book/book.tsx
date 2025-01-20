@@ -39,7 +39,7 @@ export default function Book() {
         </p>
       </div>
       {trilogies.map((trilogy, index) => (
-        <div key={index} className="mb-16">
+        <section key={index} className="mb-16">
           <h2 className="text-xl font-bold text-center text-gray-800 mb-6">
             {trilogy.name}
           </h2>
@@ -63,8 +63,10 @@ export default function Book() {
                       <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                         {book.title}
                       </h3>
-                      <p className="text-gray-600 mb-4">{book.summary}</p>
-                      <div className="flex flex-col gap-2">
+                      <p className="text-gray-600 mb-4 text-justify">
+                        {book.summary}
+                      </p>
+                      <section className="flex  gap-2">
                         <Button
                           type="button"
                           text="Lire un extrait"
@@ -78,14 +80,15 @@ export default function Book() {
                           type="button"
                           text="Acheter"
                           className={styles["button-blue-border"]}
+                          onClick={() => window.open(book.buyLink)}
                         />
-                      </div>
+                      </section>
                     </div>
                   </div>
                 </div>
               ))}
           </div>
-        </div>
+        </section>
       ))}
     </section>
   );
