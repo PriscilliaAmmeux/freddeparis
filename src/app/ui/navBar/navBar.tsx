@@ -8,10 +8,7 @@ export default function NavBar() {
   const isHomePage = pathname === "/";
 
   return (
-    <section
-      className={`flex justify-between items-center p-4 w-full text-white ${
-        isHomePage ? "bg-transparent" : "bg-blue-color"
-      }`}>
+    <section className="flex justify-center items-center p-4 w-screen bg-white-color color-text-blue">
       <nav className="flex space-x-4">
         <NavLink href="/" title="Accueil" isActive={true} />
         <NavLink href="/about" title="À propos de l'auteur" isActive={true} />

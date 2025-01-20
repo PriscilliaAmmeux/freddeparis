@@ -3,7 +3,7 @@ import NavBar from "../navBar/navBar";
 
 export default function navigation() {
   return (
-    <nav>
+    <nav className="flex md:justify-center justify-start w-full">
       <section className="lg:hidden">
         <Burger />
       </section>

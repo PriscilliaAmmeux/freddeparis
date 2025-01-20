@@ -3,8 +3,10 @@ import SocialNetwork from "../socialNetwork/socialNetwork";
 
 export default function Footer() {
   return (
-    <footer className="text-lg text-white custom-font w-full  flex flex-col items-center justify-center pt-4 pb-4 px-4 gap-2 text-center md:text-left text-sm bg-blue-color">
-      <a href="/legalNotices" className=" hover:underline cursor-pointer">
+    <footer className="text-xl color-text-blue bg-white-color custom-font w-full flex flex-col items-center justify-center pt-4 pb-4 px-4 gap-2 text-center md:text-left text-sm">
+      <a
+        href="/legalNotices"
+        className=" hover:underline cursor-pointer font-bold">
         Mentions légales
       </a>
       <SocialNetwork />
