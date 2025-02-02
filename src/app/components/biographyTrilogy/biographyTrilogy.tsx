@@ -8,7 +8,7 @@ export default function BiographyTrilogy() {
         alt="All books"
         width={200}
         height={200}
-        className="rounded-full w-32 h-32 md:w-48 md:h-48 lg:w-48 lg:h-48"
+        className=" w-48 h-48 md:w-48 md:h-64 lg:w-48 lg:h-64"
       />
       <h3 className="text-2xl font-bold mb-4">Biographie</h3>
       <p className="mb-4">

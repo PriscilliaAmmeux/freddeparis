@@ -39,9 +39,6 @@ export default function Book() {
           <h2 className="text-xl font-bold text-center text-gray-800 mb-6 italic">
             {trilogy.name}
           </h2>
-          <p className="text-lg text-gray-600 text-center mb-10 ml-10 mr-10 text-justify">
-            {trilogy.summary}
-          </p>
           <div className="flex flex-wrap justify-center -mx-4">
             {trilogy.books &&
               trilogy.books.map((book) => (
