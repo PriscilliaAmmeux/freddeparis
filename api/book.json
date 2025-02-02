@@ -2,7 +2,6 @@
   "trilogies": [
     {
       "name": "Trilogie de Gaïa",
-      "summary": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
       "books": [
         {
           "id": 1,
@@ -38,7 +37,6 @@
     },
     {
       "name": "Trilogie le nouveau monde",
-      "summary": "La trilogie du « Nouveau Monde » fait suite à la trilogie « Gaïa », et la quête éperdue de Népomucène, pour retrouver sa mère divine, et assumer son destin, de « Créateur de Monde ».",
       "books": [
         {
           "id": 4,
