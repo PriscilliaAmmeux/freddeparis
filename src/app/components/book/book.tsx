@@ -4,8 +4,8 @@ import booksData from "../../../../api/book.json";
 import Image from "next/image";
 import styles from "../../styles/button.module.css";
 import Button from "@/app/ui/button/button";
-import Title from "@/app/ui/title/title";
 import Card from "../card/card";
+import BiographyTrilogy from "../biographyTrilogy/biographyTrilogy";
 
 export default function Book() {
   const trilogies = booksData.trilogies;
@@ -32,9 +32,10 @@ export default function Book() {
   };
 
   return (
-    <section className="pt-10 pb-10 pl-2 pr-2 ">
+    <section className=" pb-10 w-full ">
+      <BiographyTrilogy />
       {trilogies.map((trilogy, index) => (
-        <section key={index} className="mb-16 ">
+        <section key={index} className="mb-16 ml-2 mr-2">
           <h2 className="text-xl font-bold text-center text-gray-800 mb-6 italic">
             {trilogy.name}
           </h2>
