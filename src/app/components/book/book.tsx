@@ -32,7 +32,7 @@ export default function Book() {
   };
 
   return (
-    <section className=" pb-10 w-full ">
+    <section className="pb-10 w-full bg-yellow-50 shadow-sm rounded-xl">
       <BiographyTrilogy />
       {trilogies.map((trilogy, index) => (
         <section key={index} className="mb-16 ml-2 mr-2">
