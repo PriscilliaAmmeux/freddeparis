@@ -52,14 +52,14 @@ export default function Book() {
                       className="mx-auto"
                     />
 
-                    <div className="p-6 text-center">
+                    <div className="p-6 text-center flex flex-col h-full">
                       <h3 className="text-2xl font-semibold text-gray-800 mb-2">
                         {book.title}
                       </h3>
                       <p className="text-gray-600 mb-4 text-justify">
                         {book.summary}
                       </p>
-                      <section className="flex  gap-2">
+                      <div className="flex gap-2 p-4 mt-auto">
                         <Button
                           type="button"
                           text="Lire un extrait"
@@ -77,7 +77,7 @@ export default function Book() {
                           className={styles["button-blue-border"]}
                           onClick={() => window.open(book.buyLink)}
                         />
-                      </section>
+                      </div>
                     </div>
                   </Card>
                 </div>
