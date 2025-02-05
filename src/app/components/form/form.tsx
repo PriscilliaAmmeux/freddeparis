@@ -75,10 +75,10 @@ export default function Form() {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="flex-1 flex flex-col bg-white rounded-md p-6"
+      className="flex-1 flex flex-col bg-blue-color rounded-md p-6"
       noValidate>
-      <div className="flex justify-center items-center">
-        <Title title="Formulaire de contact" />
+      <div className="flex justify-center items-center ">
+        <Title title="Formulaire de contact" className="color-text-white" />
       </div>
 
       <label htmlFor="name" className="sr-only">
