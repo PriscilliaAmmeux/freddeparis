@@ -1,5 +1,4 @@
 import ScrollToTopButton from "@/app/components/scrollToTopButton/scrollToTopButton";
-import SocialNetwork from "../socialNetwork/socialNetwork";
 
 export default function Footer() {
   return (
@@ -9,7 +8,6 @@ export default function Footer() {
         className=" hover:underline cursor-pointer font-bold">
         Mentions légales
       </a>
-      <SocialNetwork />
 
       <p className="italic flex flex-col md:flex-row gap-2 items-center mt-8">
         Créée par Priscillia Ammeux

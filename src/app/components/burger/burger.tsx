@@ -4,7 +4,6 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "../../styles/burger.module.css";
 import { useState, useEffect } from "react";
 import NavLink from "@/app/ui/navLink/navLink";
-import SocialNetwork from "@/app/ui/socialNetwork/socialNetwork";
 import { usePathname } from "next/navigation";
 import booksData from "../../../../api/book.json";
 
@@ -45,6 +44,11 @@ export default function Burger() {
     <section
       style={{
         height: isOpen ? "100vh" : "auto",
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100%",
+        zIndex: 1000,
       }}
       onClick={(e) => e.stopPropagation()}
       className={`text-white ${
@@ -75,49 +79,12 @@ export default function Burger() {
           />
 
           <NavLink
-            href="/about"
-            title="À propos de l'auteur"
-            className="flex items-center justify-center mt-2 font-bold"
+            href="/books"
+            title="Livres"
+            className="flex items-center justify-center mb-2 font-bold"
             onClick={handleCloseMenu}
             isActive={true}
           />
-          <NavLink
-            href="/books"
-            title="Livres ▼"
-            className="flex items-center justify-center mt-2 font-bold"
-            onClick={(e) => {
-              e.preventDefault();
-            }}
-            isActive={true}
-          />
-
-          <div className="flex flex-col justify-center items-center mb-2">
-            <h2>Trilogie de Gaïa</h2>
-            {gaiaBooks.map((book) => (
-              <NavLink
-                href={book.link}
-                title={book.title}
-                key={book.id}
-                onClick={handleCloseMenu}
-                className="flex justify-center items-center"
-              />
-            ))}
-          </div>
-
-          <div className="flex flex-col justify-center items-center mb-2">
-            <h2 className="flex justify-center items-center">
-              Trilogie le nouveau monde
-            </h2>
-            {nouveauMondeBooks.map((book) => (
-              <NavLink
-                href={book.link}
-                title={book.title}
-                key={book.id}
-                onClick={handleCloseMenu}
-                className="flex justify-center items-center"
-              />
-            ))}
-          </div>
 
           <NavLink
             href="/contact"
@@ -134,10 +101,6 @@ export default function Burger() {
             onClick={handleCloseMenu}
             isActive={true}
           />
-
-          <span className="flex justify-center items-center mt-5 color-text-blue">
-            <SocialNetwork />
-          </span>
         </nav>
       )}
     </section>

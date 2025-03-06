@@ -11,7 +11,6 @@ export default function NavBar() {
     <section className="flex justify-center items-center p-4 w-screen bg-white-color color-text-blue">
       <nav className="flex space-x-4">
         <NavLink href="/" title="Accueil" isActive={true} />
-        <NavLink href="/about" title="À propos de l'auteur" isActive={true} />
         <NavLink href="/books" title="Livres" isActive={true} />
         <NavLink href="/contact" title="Contact" isActive={true} />
       </nav>
