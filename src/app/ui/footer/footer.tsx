@@ -2,10 +2,10 @@ import ScrollToTopButton from "@/app/components/scrollToTopButton/scrollToTopBut
 
 export default function Footer() {
   return (
-    <footer className="text-xl color-text-white bg-blue-color custom-font w-full flex flex-col items-center justify-center pt-4 pb-4 px-4 gap-2 text-center md:text-left text-sm">
+    <footer className="text-xl color-text-white bg-blue-color custom-font w-full flex flex-col items-center justify-center pt-4 pb-40 px-4 gap-2 text-center md:text-left text-sm border-t border-gray-300 md:border-t-4 border-blue-pelorous shadow-lg">
       <a
         href="/legalNotices"
-        className=" hover:underline cursor-pointer font-bold">
+        className="hover:underline cursor-pointer font-bold">
         Mentions légales
       </a>
 
@@ -15,7 +15,7 @@ export default function Footer() {
 
       <a
         href="http://www.priscillia-ammeux-portfolio.fr"
-        className="pl-2  hover:underline cursor-pointer mb-5"
+        className="pl-2 hover:underline cursor-pointer mb-5"
         target="_blank"
         rel="noopener noreferrer">
         www.priscillia-ammeux-portfolio.fr

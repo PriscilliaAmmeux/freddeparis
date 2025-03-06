@@ -31,9 +31,9 @@ export default function ScrollToTopButton() {
         onClick={scrollToTop}
         style={{
           position: "fixed",
-          bottom: "40px",
+          bottom: "60px",
           right: "40px",
-          backgroundColor: "#000",
+          backgroundColor: "#007bfff1",
           color: "#fff",
           border: "none",
           padding: "10px 20px",

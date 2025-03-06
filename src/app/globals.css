@@ -70,3 +70,6 @@ body {
 .color-text-blue {
   color: var(--blue-color);
 }
+.bg-powder-blue {
+  color: var(--powder-blue);
+}
