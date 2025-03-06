@@ -5,7 +5,7 @@ import Title from "@/app/ui/title/title";
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
-import styles from "../../styles/button.module.css";
+import buttonStyles from "../../styles/button.module.css";
 
 export default function Form() {
   const [name, setName] = useState("");
@@ -51,17 +51,17 @@ export default function Form() {
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then(
-        (result) => {
+        () => {
           Swal.fire({
             title: "Succès!",
             text: "Votre message a bien été envoyé.",
             icon: "success",
           });
         },
-        (error) => {
+        () => {
           Swal.fire({
             title: "Erreur!",
-            text: "Une erreur est survenue lors de l'envoi du message. Veillez réessayer plus tard.",
+            text: "Une erreur est survenue lors de l'envoi du message. Veuillez réessayer plus tard.",
             icon: "error",
           });
         }
@@ -75,10 +75,13 @@ export default function Form() {
     <form
       ref={form}
       onSubmit={sendEmail}
-      className="flex-1 flex flex-col bg-blue-color rounded-md p-6"
+      className="flex-1 flex flex-col bg-white-color text-blue-color md:bg-blue-color md:text-white rounded-md p-6 md:p-8 m-4 md:m-8"
       noValidate>
-      <div className="flex justify-center items-center ">
-        <Title title="Formulaire de contact" className="color-text-white" />
+      <div className="flex justify-center items-center mb-4">
+        <Title
+          title="Formulaire de contact"
+          className="text-blue-color md:text-white"
+        />
       </div>
 
       <label htmlFor="name" className="sr-only">
@@ -89,36 +92,33 @@ export default function Form() {
         name="user_name"
         placeholder="Votre nom"
         required
-        aria-required="true"
-        className="mb-4 p-2 border border-gray-300 rounded-md"
+        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-white"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
 
       <label htmlFor="email" className="sr-only">
-        Votre email par exemple: email@exemple.com
+        Votre email
       </label>
       <input
         type="email"
         name="user_email"
         placeholder="mon-mail@exemple.com"
         required
-        aria-required="true"
-        className="mb-4 p-2 border border-gray-300 rounded-md"
+        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-white"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
 
       <label htmlFor="phone" className="sr-only">
-        Votre téléphone par exemple: 0612345678 (sans espace)
+        Votre téléphone
       </label>
       <input
         type="tel"
         name="user_phone"
         placeholder="Votre numéro de téléphone"
         required
-        aria-required="true"
-        className="mb-4 p-2 border border-gray-300 rounded-md"
+        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-white"
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
       />
@@ -130,8 +130,7 @@ export default function Form() {
         name="message"
         placeholder="Votre message"
         required
-        aria-required="true"
-        className="mb-4 p-2 border border-gray-300 rounded-md h-32"
+        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-white h-32"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
@@ -139,16 +138,15 @@ export default function Form() {
       <input
         type="text"
         name="honeypot"
-        placeholder=""
         style={{ display: "none", visibility: "hidden", position: "absolute" }}
         value={honeypot}
         onChange={(e) => setHoneypot(e.target.value)}
       />
+
       <Button
         type="submit"
         text="Envoyer mon message"
-        aria-label="Cliquez sur le bouton pour envoyer le message"
-        className={`${styles["button-blue-border"]} rounded-md`}
+        className={`${buttonStyles["button-blue-border"]} rounded-md`}
       />
     </form>
   );
