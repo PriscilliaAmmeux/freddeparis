@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 function setCookie(name: string, value: string, hours: number) {
   const date = new Date();
-  date.setTime(date.getTime() + hours * 60 * 60 * 1000);
+  date.setTime(date.getTime() + hours * 60 * 60 * 10000);
   const expires = "expires=" + date.toUTCString();
   document.cookie = name + "=" + value + ";" + expires + ";path=/";
 }
@@ -70,12 +70,7 @@ export default function Cookies() {
         <div className="fixed bottom-0 left-0 right-0  flex items-center justify-center bg-black bg-opacity-50 z-50">
           <div className="bg-white p-5  shadow-lg w-full">
             <div className="flex flex-row items-center">
-              <Image
-                src="/cookies.webp"
-                alt="Cookie"
-                width={100}
-                height={100}
-              />
+              <Image src="/cookies.webp" alt="Cookie" width={30} height={30} />
               <p className="pb-2 font-bold">
                 Salut c&apos;est nous, les COOKIES !
               </p>
