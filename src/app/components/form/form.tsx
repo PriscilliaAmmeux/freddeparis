@@ -92,7 +92,7 @@ export default function Form() {
         name="user_name"
         placeholder="Votre nom"
         required
-        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-white"
+        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-blue-dianne"
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
@@ -105,7 +105,7 @@ export default function Form() {
         name="user_email"
         placeholder="mon-mail@exemple.com"
         required
-        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-white"
+        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-blue-dianne"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
@@ -118,7 +118,7 @@ export default function Form() {
         name="user_phone"
         placeholder="Votre numéro de téléphone"
         required
-        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-white"
+        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-blue-dianne"
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
       />
@@ -130,7 +130,7 @@ export default function Form() {
         name="message"
         placeholder="Votre message"
         required
-        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-white h-32"
+        className="mb-4 p-2 border border-gray-300 rounded-md bg-white-color text-black md:bg-blue-dianne md:text-blue-dianne h-32"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
