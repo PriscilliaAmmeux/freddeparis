@@ -6,7 +6,7 @@ export default function BiographyTrilogy() {
     <section className="text-justify p-6 bg-blue-color text-white mb-6 w-full">
       <div className="flex justify-center p-0">
         <Image
-          src="/books.png"
+          src="/books.webp"
           alt="All books"
           width={400}
           height={400}
