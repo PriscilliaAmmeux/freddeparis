@@ -66,7 +66,7 @@ export default function Book() {
                         onClick={toggleDropdown}
                         className="flex justify-center items-center px-4 py-2 rounded-lg hover:font-bold"
                         style={{ color: "var(--blue-color)" }}>
-                        <h3 className="text-2xl font-semibold flex justify-center text-gray-800 mb-2">
+                        <h3 className="text-2xl font-semibold flex justify-center text-gray-800 mb-2 font-cinzel">
                           {book.title}
                         </h3>
                         <svg

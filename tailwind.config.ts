@@ -14,9 +14,9 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        inter: ["var(--font-inter)", "sans-serif"],
         rajdhani: ["var(--font-rajdhani)", "sans-serif"],
         orbitron: ["var(--font-orbitron)", "sans-serif"],
+        cinzel: ["var(--font-cinzel)", "serif"],
       },
     },
   },
