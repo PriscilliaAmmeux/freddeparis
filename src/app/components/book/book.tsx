@@ -112,7 +112,7 @@ export default function Book() {
                       )}
 
                       <div className="flex gap-2 p-4 mt-auto">
-                        {book.title !== "Bientôt disponible" && (
+                        {book.title !== "Le créateur de Mondes" && (
                           <>
                             <Button
                               type="button"
