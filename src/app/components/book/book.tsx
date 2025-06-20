@@ -91,48 +91,46 @@ export default function Book() {
                           {" "}
                           <p className="mt-4 p-4 bg-gray-100 text-justify rounded-lg">
                             {book.summary}
-                          </p>
-                          <p className="text-gray-600 mb-4 text-justify italic">
-                            {book.detail}
-                          </p>
-                          <p className="text-gray-600 mb-4 text-justify italic">
-                            {book.detail2}
+                            <p className="mt-4 text-justify"> {book.context}</p>
+                            {book.poem && (
+                              <div className="mt-4 mb-4 px-4 py-2 text-xs bg-white text-justify border-l-4 rounded shadow text-gray-700">
+                                {Object.values(book.poem).map((line, idx) => (
+                                  <p
+                                    key={idx}
+                                    className="leading-relaxed italic">
+                                    {line}
+                                  </p>
+                                ))}
+                              </div>
+                            )}
+                            <p className=" mb-2 text-justify">{book.detail}</p>
+                            <p className="text-gray-600 text-xs mb-4 text-justify italic">
+                              {book.detail2}
+                            </p>
                           </p>
                         </div>
                       )}
 
                       <div className="flex gap-2 p-4 mt-auto">
-                        {book.title === "Morpheus ou la Révolution Poétique" ? (
-                          <Button
-                            type="button"
-                            text="Lire un extrait"
-                            aria-label="Lire un extrait"
-                            className={styles["button-white-border"]}
-                            onClick={() =>
-                              book.pdfLink && handleDownload(book.pdfLink)
-                            }
-                          />
-                        ) : (
-                          book.title !== "Bientôt disponible" && (
-                            <>
-                              <Button
-                                type="button"
-                                text="Lire un extrait"
-                                aria-label="Lire un extrait"
-                                className={styles["button-white-border"]}
-                                onClick={() =>
-                                  book.pdfLink && handleDownload(book.pdfLink)
-                                }
-                              />
-                              <Button
-                                type="button"
-                                text="Se procurer le livre"
-                                aria-label="Se procurer le livre"
-                                className={styles["button-blue-border"]}
-                                onClick={() => window.open(book.buyLink)}
-                              />
-                            </>
-                          )
+                        {book.title !== "Bientôt disponible" && (
+                          <>
+                            <Button
+                              type="button"
+                              text="Lire un extrait"
+                              aria-label="Lire un extrait"
+                              className={styles["button-white-border"]}
+                              onClick={() =>
+                                book.pdfLink && handleDownload(book.pdfLink)
+                              }
+                            />
+                            <Button
+                              type="button"
+                              text="Se procurer le livre"
+                              aria-label="Se procurer le livre"
+                              className={styles["button-blue-border"]}
+                              onClick={() => window.open(book.buyLink)}
+                            />
+                          </>
                         )}
                       </div>
                     </div>
