@@ -43,7 +43,7 @@ export default function Book() {
       <BiographyTrilogy />
       {trilogies.map((trilogy, index) => (
         <section key={index} className="mb-16 ml-2 mr-2">
-          <h2 className="text-xl font-bold text-center text-gray-800 mb-6 italic">
+          <h2 className="text-xl font-bold text-center text-gray-800 mb-6 font-orbitron">
             {trilogy.name}
           </h2>
           <div className="flex flex-wrap justify-center item-center -mx-4">
