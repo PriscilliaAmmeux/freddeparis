@@ -20,7 +20,7 @@ export default function NavLink({
   return (
     <Link href={href} target="_self" rel="noopener noreferrer">
       <h3
-        className={`mr-6 uppercase ${className}`}
+        className={`mr-6 uppercase font-cinzel `}
         onClick={onClick}
         style={{
           color: isActive ? "underline" : "",

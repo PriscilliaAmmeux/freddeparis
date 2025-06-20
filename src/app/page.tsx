@@ -21,29 +21,28 @@ export default function Home() {
           {" "}
           <Navigation />
         </div>
-        {/* Version mobile */}
-        <div
-          className="md:hidden text-white text-center mb-10"
-          aria-hidden="false">
-          <p className="text-2xl">Deux trilogies</p>
-          <p className="text-2xl  mb-10">de Science-Fiction</p>
-          <p className="text-3xl font-orbitron">"Gaia"</p>
-          <p className="text-2xl">et</p>
-          <p className="text-3xl font-orbitron">"Le Nouveau Monde"</p>
+        <div className="text-white text-center mb-10">
+          <div className="md:hidden" aria-hidden="false">
+            <p className="text-2xl font-cinzel">Deux trilogies</p>
+            <p className="text-2xl mb-10">de Science-Fiction</p>
+            <p className="text-3xl font-orbitron">Gaia</p>
+            <p className="text-2xl font-cinzel">et</p>
+            <p className="text-3xl font-orbitron">Le Nouveau Monde</p>
+          </div>
+          <div className="hidden md:block" aria-hidden="true">
+            <p className="text-3xl mb-10 font-rajdhani">
+              Deux trilogies de Science-Fiction
+            </p>
+            <div className="flex flex-col items-center gap-2">
+              <p className="text-5xl font-orbitron">Gaia</p>
+              <p className="text-3xl font-cinzel">et</p>
+              <p className="text-5xl font-orbitron">Le Nouveau Monde</p>
+            </div>
+          </div>
         </div>
-
-        {/* Version desktop */}
-        <div
-          className="hidden md:block text-white text-center mb-10"
-          aria-hidden="true">
-          <p className="text-3xl mb-10 ">Deux trilogies de Science-Fiction</p>
-          <p className="text-5xl font-orbitron">
-            "Gaia" <span className="text-3xl">et</span> "le Nouveau Monde"
-          </p>
-        </div>
-        <h1 className="flex flex-col md:flex-row items-center text-center md:text-left text-white custom-font text-2xl md:text-3xl">
-          <span className="md:mr-2">Frédéric</span>
-          <span>DEPARIS</span>
+        <h1 className="flex flex-col md:flex-row items-center text-center md:text-left text-white custom-font text-2xl md:text-3xl ">
+          <span className="md:mr-2 font-rajdhani">Frédéric</span>
+          <span className="font-rajdhani">DEPARIS</span>
         </h1>
       </div>
       <Analytics />
