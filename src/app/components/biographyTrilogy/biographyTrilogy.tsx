@@ -67,8 +67,8 @@ export default function BiographyTrilogy() {
 
       <Paragraph>
         Les deux premiers cycles de la trilogie du « Nouveau Monde » : « les
-        bicéphales », et « Morpheus ou la révolution poétique » mettent en scène
-        le personnage de Népomucène, fils de Gaïa, « Créateur de Monde », déjà
+        bicéphales », et « La révolution poétique » mettent en scène le
+        personnage de Népomucène, fils de Gaïa, « Créateur de Monde », déjà
         entrevu dans « le Voyage ultime ». À la recherche de sa mère, Népomucène
         doit affronter les bicéphales, des êtres humains dotés de deux cerveaux,
         qui ont éradiqué l&apos;imagination et la puissance créatrice du cortex
