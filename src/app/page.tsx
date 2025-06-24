@@ -1,7 +1,6 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import Cookies from "./components/cookies/cookies";
 import Navigation from "./ui/navigation/navigation";
 import "./globals.css";
 
@@ -47,7 +46,6 @@ export default function Home() {
       </div>
       <Analytics />
       <SpeedInsights />
-      <Cookies />
     </section>
   );
 }

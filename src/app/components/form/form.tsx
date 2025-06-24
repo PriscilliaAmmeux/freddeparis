@@ -13,6 +13,7 @@ export default function Form() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [honeypot, setHoneypot] = useState("");
+  const [acceptedPrivacy, setAcceptedPrivacy] = useState(false);
 
   const form = useRef<HTMLFormElement>(null);
 
@@ -46,6 +47,13 @@ export default function Form() {
 
     if (!form.current) {
       throw new Error("Form is not rendered yet");
+    }
+
+    if (!acceptedPrivacy) {
+      alert(
+        "Veuillez accepter la politique de confidentialité pour envoyer le formulaire."
+      );
+      return;
     }
 
     emailjs
@@ -142,6 +150,25 @@ export default function Form() {
         value={honeypot}
         onChange={(e) => setHoneypot(e.target.value)}
       />
+
+      <div className="flex items-start mb-4">
+        <input
+          type="checkbox"
+          id="privacy"
+          required
+          checked={acceptedPrivacy}
+          onChange={(e) => setAcceptedPrivacy(e.target.checked)}
+          className="mt-1 mr-2"
+        />
+        <label htmlFor="privacy" className="text-sm text-gray-800">
+          J’accepte la collecte et le traitement de mes données personnelles
+          conformément à la{" "}
+          <a href="/privacy" target="_blank" className=" underline">
+            politique de confidentialité
+          </a>
+          .
+        </label>
+      </div>
 
       <Button
         type="submit"
