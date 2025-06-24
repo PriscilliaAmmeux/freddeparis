@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "title": "Responsable du traitement",
+    "content": [
+      {
+        "text": "Le traitement des données personnelles est assuré par Priscillia Ammeux, développeuse web freelance. Contact : priscillia.ammeux.pro@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Données collectées",
+    "content": "Les données personnelles collectées via le formulaire sont : nom, e-mail, téléphone, message et consentement explicite."
+  },
+  {
+    "id": 3,
+    "title": "Finalité et base légale",
+    "content": "Les données sont collectées uniquement pour répondre aux demandes de contact. La base légale est le consentement, donné via la case à cocher obligatoire du formulaire."
+  },
+  {
+    "id": 4,
+    "title": "Destinataires des données",
+    "content": "Les données sont transmises uniquement via EmailJS pour m’être directement envoyées par e-mail. Elles ne sont ni vendues ni partagées."
+  },
+
+  {
+    "id": 5,
+    "title": "Durée de conservation",
+    "content": "Les messages sont conservés au maximum 12 mois, sauf obligation légale contraire."
+  },
+  {
+    "id": 6,
+    "title": "Vos droits",
+    "content": [
+      {
+        "text": "Vous disposez des droits d’accès, de rectification, d’effacement, de limitation, d’opposition et de portabilité. Vous pouvez retirer votre consentement à tout moment."
+      },
+      {
+        "text": "Pour exercer vos droits, contactez-moi via le formulaire de contact"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Cookies",
+    "content": "Ce site ne dépose aucun cookie à des fins publicitaires ou statistiques. Aucune donnée de navigation n’est collectée sans votre consentement."
+  },
+  {
+    "id": 8,
+    "title": "Sécurité",
+    "content": "Les données sont transmises via une connexion HTTPS sécurisée. EmailJS assure également une sécurité conforme aux standards du secteur."
+  }
+]
