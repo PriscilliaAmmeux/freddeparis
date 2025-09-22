@@ -66,7 +66,7 @@ export default function Book() {
                         onClick={toggleDropdown}
                         className="flex justify-center items-center px-4 py-2 rounded-lg hover:font-bold"
                         style={{ color: "var(--blue-color)" }}>
-                        <h3 className="text-2xl font-semibold flex justify-center text-gray-800 mb-2 font-cinzel">
+                        <h3 className="text-2xl font-semibold flex text-gray-800 mb-2 font-cinzel">
                           {book.title}
                         </h3>
                         <svg
@@ -89,11 +89,11 @@ export default function Book() {
                       {isOpen && (
                         <div>
                           {" "}
-                          <p className="mt-4 p-4 bg-gray-100 text-justify rounded-lg">
+                          <p className="mt-4 p-4 bg-gray-100 rounded-lg text-left">
                             {book.summary}
-                            <p className="mt-4 text-justify"> {book.context}</p>
+                            <p className="mt-4"> {book.context}</p>
                             {book.poem && (
-                              <div className="mt-4 mb-4 px-4 py-2 text-xs bg-white text-justify border-l-4 rounded shadow text-gray-700">
+                              <div className="mt-4 mb-4 px-4 py-2 text-xs bg-white border-l-4 rounded shadow text-gray-700">
                                 {Object.values(book.poem).map((line, idx) => (
                                   <p
                                     key={idx}
@@ -103,8 +103,8 @@ export default function Book() {
                                 ))}
                               </div>
                             )}
-                            <p className=" mb-2 text-justify">{book.detail}</p>
-                            <p className="text-gray-600 text-xs mb-4 text-justify italic">
+                            <p className=" mb-2">{book.detail}</p>
+                            <p className="text-gray-600 text-xs mb-4 italic">
                               {book.detail2}
                             </p>
                           </p>
