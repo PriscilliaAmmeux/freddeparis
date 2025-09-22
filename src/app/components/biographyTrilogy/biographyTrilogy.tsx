@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function BiographyTrilogy() {
   return (
-    <section className="text-justify p-6 bg-blue-color text-white mb-6 w-full">
+    <section className="p-6 bg-blue-color text-white mb-6 w-full">
       <div className="flex justify-center p-0">
         <Image
           src="/books.webp"

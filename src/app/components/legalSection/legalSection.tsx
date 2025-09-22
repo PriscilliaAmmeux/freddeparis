@@ -12,12 +12,12 @@ export default function LegalSection({ data }: LegalSectionProps) {
           <h2 className="text-xl font-bold mb-2">{notice.title}</h2>
           {Array.isArray(notice.content) ? (
             notice.content.map((item, index) => (
-              <p key={index} className="mb-2 flex text-justify">
+              <p key={index} className="mb-2 flex">
                 {item.text}
               </p>
             ))
           ) : (
-            <p className="mb-2 text-justify">{notice.content}</p>
+            <p className="mb-2">{notice.content}</p>
           )}
         </div>
       ))}

@@ -4,5 +4,5 @@ interface ParagraphProps {
     
 
 export default function Paragraph({ children }: ParagraphProps) {
-  return <p className=" mb-4 text-justify">{children}</p>;
+  return <p className=" mb-4">{children}</p>;
 }

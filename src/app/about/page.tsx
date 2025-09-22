@@ -35,7 +35,7 @@ export default function Page() {
                 <Title title="Frédéric DEPARIS" />
                 <h3 className="font-bold">Biographie</h3>
 
-                <p className="mb-4 text-justify">
+                <p className="mb-4">
                   Frédéric Deparis est né en ... à.... (à compléter)
                 </p>
               </div>
