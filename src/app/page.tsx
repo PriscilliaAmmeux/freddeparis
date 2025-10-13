@@ -3,6 +3,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import Navigation from "./ui/navigation/navigation";
 import "./globals.css";
+import Footer from "./ui/footer/footer";
 
 export const metadata: Metadata = {
   title: "Frederic DEPARIS - Auteur de Science Fiction",
@@ -25,7 +26,6 @@ export default function Home() {
     <section className=" flex flex-col justify-center">
       <div className="background-image flex flex-col items-center justify-center h-full w-full">
         <div className="fixed top-0 left-0 w-full z-50">
-          {" "}
           <Navigation />
         </div>
         <div className="text-white text-center mb-10">
@@ -52,6 +52,7 @@ export default function Home() {
           <span className="font-rajdhani">DEPARIS</span>
         </h1>
       </div>
+      <Footer />
       <Analytics />
       <SpeedInsights />
     </section>
