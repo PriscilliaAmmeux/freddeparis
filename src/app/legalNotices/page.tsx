@@ -6,11 +6,22 @@ import LegalSection from "../components/legalSection/legalSection";
 import LegalLayout from "../components/legalLayout/legalLayout";
 
 export const metadata: Metadata = {
-  title: "Mentions légales - Frédéric DEPARIS",
+  title: "Politique de confidentialite - Frederic DEPARIS",
   description:
-    "Consultez les mentions légales du site officiel de Frédéric DEPARIS, auteur de science-fiction et de romans captivants. Informations sur l'éditeur, l'hébergement et les droits.",
+    "Consultez la politique de confidentialite du site de Frederic DEPARIS. Informations sur la collecte de donnees, responsable du traitement, droits utilisateurs et securite.",
   keywords:
-    "Mentions légales, Frédéric DEPARIS, site officiel, auteur science-fiction, informations légales, droits d'auteur, hébergeur, éditeur",
+    "politique-de-confidentialite|donnees-personnelles|rgpd|cookies|consentement|responsable-du-traitement|droits-utilisateurs|securite|frederic-deparis|formulaire-de-contact",
+  openGraph: {
+    title: "Politique de confidentialite - Frederic DEPARIS",
+    description:
+      "Toutes les informations sur la gestion de vos donnees personnelles sur le site de Frederic DEPARIS : collecte, finalites, droits, securite et contact.",
+    url: "https://www.frederic-deparis.fr/privacy",
+    siteName: "Frederic DEPARIS",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://www.frederic-deparis.fr/privacy",
+  },
 };
 
 export default function LegalNotices() {
