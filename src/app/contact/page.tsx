@@ -3,11 +3,19 @@ import Form from "../components/form/form";
 import Layout from "../ui/layout/layout";
 
 export const metadata: Metadata = {
-  title: "Contact - Frédéric DEPARIS, Auteur de Science Fiction",
+  title: "Contact - Frederic DEPARIS, Auteur de Science Fiction",
   description:
-    "Entrez en contact avec Frédéric DEPARIS, auteur de science-fiction et de romans captivants. Posez vos questions, partagez vos avis ou demandez des informations sur ses œuvres.",
+    "Entrez en contact avec Frederic DEPARIS, auteur de science-fiction et de romans captivants. Posez vos questions, partagez vos avis ou demandez des informations sur ses oeuvres.",
   keywords:
-    "Contact Frédéric DEPARIS, auteur science-fiction, romans captivants, poser des questions, avis lecteurs, trilogies, Trilogie de Gaïa, Game Over, contact auteur",
+    "contact-frederic-deparis|auteur-science-fiction|romans-captivants|poser-des-questions|avis-lecteurs|trilogies|trilogie-de-gaia|game-over|contact-auteur",
+  openGraph: {
+    title: "Contact - Frederic DEPARIS, Auteur de Science Fiction",
+    description:
+      "Entrez en contact avec Frederic DEPARIS, auteur de science-fiction et de romans captivants. Posez vos questions, partagez vos avis ou demandez des informations sur ses oeuvres.",
+  },
+  alternates: {
+    canonical: "https://www.frederic-deparis.fr/contact",
+  },
 };
 
 export default function Page() {
