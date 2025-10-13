@@ -1,36 +1,37 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="text-xl color-text-white bg-blue-color custom-font w-full flex flex-col items-center justify-center pt-4 pb-10 px-4 gap-2 text-center md:text-left text-sm border-t border-gray-300 md:border-t-4 border-blue-pelorous shadow-lg">
+      <h2 className="font-orbitron mb-4">Merci de votre visite ! </h2>
       <div className="w-full max-w-4xl flex flex-col sm:flex-row justify-between gap-8">
         <div className="flex flex-col gap-2 items-center sm:items-start">
-          <a
-            href="/"
-            className="hover:underline cursor-pointer text-center">
+          <Link href="/" className="hover:underline cursor-pointer text-center">
             Accueil
-          </a>
-          <a
+          </Link>
+          <Link
             href="/books"
             className="hover:underline cursor-pointer text-center">
             Livres
-          </a>
-          <a
+          </Link>
+          <Link
             href="/contact"
             className="hover:underline cursor-pointer text-center">
             Contact
-          </a>
+          </Link>
         </div>
 
         <div className="flex flex-col gap-2 items-center sm:items-start">
-          <a
+          <Link
             href="/legalNotices"
             className="hover:underline cursor-pointer text-center">
             Mentions légales
-          </a>
-          <a
+          </Link>
+          <Link
             href="/privacy"
             className="hover:underline cursor-pointer text-center">
             Politiques de confidentialité
-          </a>
+          </Link>
         </div>
       </div>
 
