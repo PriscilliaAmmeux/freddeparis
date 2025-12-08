@@ -1,9 +1,12 @@
 import Paragraph from "@/app/ui/paragraph/paragraph";
+import Subtitle from "@/app/ui/subtitle/subtitle";
 import Image from "next/image";
 
 export default function BiographyTrilogy() {
   return (
-    <section className="p-6 bg-blue-color text-white mb-6 w-full">
+    <section
+      id="biographie"
+      className="p-6 bg-blue-color text-white mb-6 w-full">
       <div className="flex justify-center p-0">
         <Image
           src="/books.webp"
@@ -13,7 +16,7 @@ export default function BiographyTrilogy() {
           className="object-contain w-64 h-64 md:w-80 md:h-96 lg:w-80 lg:h-96 m-0"
         />
       </div>
-      <h3 className="text-3xl font-extrabold mb-6 text-center">Biographie</h3>
+      <Subtitle text="Biographie" />
 
       <Paragraph>
         Les deux trilogies « Gaïa » et sa suite, « le Nouveau Monde » sont des
