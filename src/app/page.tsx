@@ -1,12 +1,11 @@
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import type { Metadata } from "next";
-
 import "./globals.css";
 import Footer from "./ui/footer/footer";
 import Header from "./ui/header/header";
 import Book from "./components/book/book";
 import Contact from "./ui/contact/contact";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Frederic DEPARIS - Auteur de Science Fiction",
