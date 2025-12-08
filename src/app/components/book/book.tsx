@@ -7,6 +7,7 @@ import Button from "@/app/ui/button/button";
 import Card from "../card/card";
 import BiographyTrilogy from "../biographyTrilogy/biographyTrilogy";
 import { useState } from "react";
+import Subtitle from "@/app/ui/subtitle/subtitle";
 
 export default function Book() {
   const trilogies = booksData.trilogies;
@@ -41,11 +42,12 @@ export default function Book() {
   return (
     <section className="pb-10 w-full bg-yellow-50 shadow-sm rounded-xl flex justify-center flex-col items-center">
       <BiographyTrilogy />
+      <Subtitle id="oeuvres" text="Les oeuvres" />
       {trilogies.map((trilogy, index) => (
         <section key={index} className="mb-16 ml-2 mr-2">
-          <h2 className="text-xl font-bold text-center text-gray-800 mb-6 font-orbitron">
+          <h3 className="text-xl font-bold text-center text-gray-800 mb-6 font-orbitron">
             {trilogy.name}
-          </h2>
+          </h3>
           <div className="flex flex-wrap justify-center item-center -mx-4">
             {trilogy.books &&
               trilogy.books.map((book) => (
@@ -66,9 +68,9 @@ export default function Book() {
                         onClick={toggleDropdown}
                         className="flex justify-center items-center px-4 py-2 rounded-lg hover:font-bold"
                         style={{ color: "var(--blue-color)" }}>
-                        <h3 className="text-2xl font-semibold flex text-gray-800 mb-2 font-cinzel">
+                        <h4 className="text-2xl font-semibold flex text-gray-800 mb-2 font-cinzel">
                           {book.title}
-                        </h3>
+                        </h4>
                         <svg
                           style={{ color: "var(--blue-color)" }}
                           className={`ml-2 w-4 h-4 transition-transform transform ${
