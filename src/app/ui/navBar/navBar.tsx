@@ -1,11 +1,11 @@
 "use client";
 
 import { useState } from "react";
+import ButtonContactMe from "../buttonContactMe/buttonContactMe";
 
 const navigationItems = [
   { href: "#biographie", label: "Biographie" },
   { href: "#oeuvres", label: "Les oeuvres" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export default function NavBar() {
@@ -20,11 +20,9 @@ export default function NavBar() {
   };
 
   return (
-    <section className="relative flex items-center p-4 w-screen bg-white-color color-text-blue">
-      <h2 className="font-orbitron mb-0 ml-2 absolute left-4 top-1/2 -translate-y-1/2">
-        Frédéric DEPARIS
-      </h2>
-      <nav className="flex space-x-4 mx-auto">
+    <section className="flex items-center justify-between p-4 w-screen bg-white-color color-text-blue">
+      <h2 className="font-orbitron mb-0 ml-2">Frédéric DEPARIS</h2>
+      <nav className="flex space-x-4">
         {navigationItems.map(({ href, label }) => {
           const isActive = activeSection === href;
 
@@ -47,6 +45,7 @@ export default function NavBar() {
           );
         })}
       </nav>
+      <ButtonContactMe />
     </section>
   );
 }

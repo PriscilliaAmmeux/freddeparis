@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ButtonContactMe from "../buttonContactMe/buttonContactMe";
 
 export default function Footer() {
   return (
@@ -14,11 +15,11 @@ export default function Footer() {
             className="hover:underline cursor-pointer text-center">
             Livres
           </Link>
-          <Link
-            href="/contact"
+          <a
+            href="mailto:fredericdeparis61@gmail.com"
             className="hover:underline cursor-pointer text-center">
-            Contact
-          </Link>
+            Me contacter
+          </a>
         </div>
 
         <div className="flex flex-col gap-2 items-center sm:items-start">

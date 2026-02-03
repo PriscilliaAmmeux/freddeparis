@@ -4,7 +4,6 @@ import "./globals.css";
 import Footer from "./ui/footer/footer";
 import Header from "./ui/header/header";
 import Book from "./components/book/book";
-import Contact from "./ui/contact/contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -31,9 +30,6 @@ export default function Home() {
       </section>
       <section id="livres">
         <Book />
-      </section>
-      <section id="contact">
-        <Contact />
       </section>
       <Footer />
       <Analytics />
