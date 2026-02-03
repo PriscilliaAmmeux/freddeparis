@@ -90,10 +90,9 @@ export default function Book() {
                       </button>
                       {isOpen && (
                         <div>
-                          {" "}
-                          <p className="mt-4 p-4 bg-gray-100 rounded-lg text-left">
-                            {book.summary}
-                            <p className="mt-4"> {book.context}</p>
+                          <div className="mt-4 p-4 bg-gray-100 rounded-lg text-left">
+                            <p>{book.summary}</p>
+                            <p className="mt-4">{book.context}</p>
                             {book.poem && (
                               <div className="mt-4 mb-4 px-4 py-2 text-xs bg-white border-l-4 rounded shadow text-gray-700">
                                 {Object.values(book.poem).map((line, idx) => (
@@ -105,11 +104,11 @@ export default function Book() {
                                 ))}
                               </div>
                             )}
-                            <p className=" mb-2">{book.detail}</p>
+                            <p className="mb-2">{book.detail}</p>
                             <p className="text-gray-600 text-xs mb-4 italic">
                               {book.detail2}
                             </p>
-                          </p>
+                          </div>
                         </div>
                       )}
 
@@ -127,8 +126,8 @@ export default function Book() {
                             />
                             <Button
                               type="button"
-                              text="Se procurer le livre"
-                              aria-label="Se procurer le livre"
+                              text="Commander"
+                              aria-label="Commander le livre"
                               className={styles["button-blue-border"]}
                               onClick={() => window.open(book.buyLink)}
                             />

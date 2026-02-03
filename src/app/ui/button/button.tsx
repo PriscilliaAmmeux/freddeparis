@@ -17,7 +17,7 @@ export default function Button({
     <button
       type={type}
       onClick={onClick}
-      className={`p-2 w-50 cursor-pointer rounded-full mx-auto  transition-colors duration-300 ease-in-out ${className}`}
+      className={`p-2 w-50 cursor-pointer rounded-xl mx-auto transition-colors duration-300 ease-in-out border-1 border-[#235c6b]  ${className}`}
       aria-label={text}
       disabled={disabled}>
       {text}
